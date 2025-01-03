@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>政策导航</title>
-    <style>
+  <style>
         body {
             margin: 0;
             font-family: 'Microsoft YaHei', Arial, sans-serif;
@@ -54,76 +54,75 @@
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05); /* 柔和阴影 */
         }
     
+        /* section-title 样式调整 */
         .section-title {
-            font-size: 22px;
-            color: #3c73a8; /* 稍深的蓝色 */
-            margin-bottom: 20px;
-            font-weight: bold;
-            border-left: 4px solid #6aa3d6; /* 分隔线稍深 */
-            padding-left: 12px;
-            background-color: #f3f8fd; /* 淡蓝背景色 */
-            padding-top: 5px;
-            padding-bottom: 5px;
+            font-size: 24px; /* 增大字体大小 */
+            color: #ffffff; /* 白色字体 */
+            background-color: #2c3e50; /* 深色背景 */
+            font-weight: bold; /* 加粗字体 */
+            margin-bottom: 15px;
+            padding: 10px 15px;
+            border-radius: 5px; /* 圆角 */
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* 轻阴影 */
         }
     
+        /* policy-item 样式 */
         .policy-item {
-            background: #f3f8fd; /* 略深的灰蓝背景 */
-            border: 1px solid #c5d9ef; /* 稍深的边框 */
+            background: #f3f8fd; /* 淡蓝色背景 */
+            border: 1px solid #c5d9ef;
             border-radius: 8px;
             padding: 15px;
             margin-bottom: 15px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05); /* 轻阴影 */
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
             transition: all 0.2s ease-in-out;
         }
     
+        /* policy-item 中 h3 样式调整 */
+        .policy-item h3 {
+            font-size: 18px;
+            color: #3c73a8; /* 稍深蓝色标题 */
+            font-weight: bold; /* 加粗标题 */
+            margin-bottom: 10px;
+        }
+    
+        /* 改进悬停效果 */
         .policy-item:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
-            background: #eaf3fc; /* 悬停时更深的背景 */
+            background: #eaf3fc; /* 更深的背景 */
         }
     
-        .policy-item h3 {
-            margin: 0 0 10px;
-            font-size: 18px;
-            color: #3c73a8; /* 稍深蓝色标题 */
-            font-weight: bold;
-        }
-    
+        /* 设置链接颜色 */
         .policy-item a {
-            color: #4a90e2; /* 柔和的蓝色链接 */
+            color: #4a90e2; /* 蓝色链接 */
             text-decoration: none;
         }
-    
+
         .policy-item a:hover {
-            text-decoration: underline;
+            text-decoration: underline; /* 鼠标悬停时下划线 */
         }
-    
+
         /* 返回按钮 */
-                /* 返回按钮 */
         .back-btn {
             display: block;
             text-align: center;
             background-color: #4a90e2; /* 柔和的蓝色 */
             color: #ffffff;
-            padding: 15px 25px; /* 增大点击区域 */
+            padding: 12px 20px;
             text-decoration: none;
             border-radius: 10px;
-            font-size: 18px; /* 提升字体大小 */
+            font-size: 16px;
             font-weight: bold;
-            position: fixed; /* 固定按钮位置 */
-            bottom: 20px; /* 距离底部 */
-            right: 20px; /* 距离右侧 */
-            z-index: 1000;
+            margin-top: 30px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
             transition: all 0.3s ease-in-out;
         }
 
         .back-btn:hover {
             background-color: #407fbf; /* 稍深的蓝色悬停效果 */
-            transform: scale(1.1); /* 放大效果 */
+            transform: translateY(-2px);
         }
 
-    
         /* 响应式设计 */
         @media (max-width: 768px) {
             .section-title {
@@ -136,7 +135,7 @@
                 font-size: 28px;
             }
         }
-    
+
         @media (max-width: 480px) {
             .section-title {
                 font-size: 18px;
@@ -152,7 +151,6 @@
             }
         }
     </style>
-    
     
     
 </head>
